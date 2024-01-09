@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US" class="newEntry">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>New Entry</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="newEntry">
+    <div class = "newEntryMenu">
+
+        <div class="newEntry-item"> <a href="month.html"><button id="backEntry"> back </button></a> </div>
+        <div class="newEntry-item"> <h1 id="dayTitle"> Day <span id="dayNumber">  </span> </h1></div>
+        <div class="newEntry-item"> <button id="saveEntry"> save </button></div>
+        
+    </div>
+
+    <div class="habitContainer1">
+        <div class="habit"> workout
+            <form id="workoutForm">
+                <input type="radio" id="one" name="numRating" value="Easy">
+                <label for="one">Easy</label><br>
+                <input type="radio" id="two" name="numRating" value="Medium">
+                <label for="two">Medium</label><br>
+                <input type="radio" id="three" name="numRating" value="Hard">
+                <label for="three">Hard</label>
+              </form>
+        </div>
+
+
+        <div class="habit">water
+            <form id="waterForm">
+                <input type="radio" id="incomplete" name="waterCons" value="Less than 1G">
+                <label for="incomplete"> Less than 1G </label><br>
+    
+                <input type="radio" id="complete" name="waterCons" value="One Gallon">
+                <label for="complete">One Gallon</label>
+              </form>
+        </div>
+        <div class="habit">meditation/prayer
+            <p id="moodSub"> mood change</p>
+            <form id="medForm">
+                <input type="radio" id="pos" name="moodRating" value="positive">
+                <label for="pos">positive</label><br>
+                <input type="radio" id="neutral" name="moodRating" value="neutral">
+                <label for="neutral">neutral</label><br>
+                <input type="radio" id="neg" name="moodRating" value="negative">
+                <label for="neg">negative</label>
+            </form>
+    
+        </div>
+        <div class="habit">new word
+            <form>
+                <label for="fname" id="newWord">new word:</label><br>
+                <input type="text" id="newWordI" name="newWord"><br>
+                <label for="example" id="newWord">synonym:</label><br>
+                <input type="text" id="synonymI" name="example">
+              </form>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="habitContainer2">
+
+        <div class="habit2"> 
+            <div class="titleClass">
+                <p class="journalTitle" id="habit2title"> journal</p>
+                <button class="journalTitle" id="promptbtn"> prompt needed </button>
+            </div>
+
+            <div id="journalPrompt"></div>
+        
+            <textarea class="journal-text" name="journal-text" rows="28" cols="62" placeholder="Click here to start journaling"></textarea>
+
+            
+        </div>
+
+        <div class="habit2">
+            <div class="titleClass">
+                <p class="journalTitle" id="readTitle"> read</p>
+                <form class="journalTitle" id="titleForm">
+                    <label for="fname" id="bookTitle">book title:</label>
+                    <input type="text" id="bookInput" name="newWord">
+                </form>
+            </div>
+            
+            <p id="takeTitle"> Three Takeaways</p>
+
+            <div class="takeaways-container">
+                <div class="takeaway-item">
+                    <p class="order"> 1. </p>
+                    <textarea class="takeaway-text" name="takeaway1" rows="4" cols="62" placeholder="Click here to type takeaway one"></textarea>
+                </div>
+                <div class="takeaway-item">
+                    <p class="order"> 2. </p>
+                    <textarea class="takeaway-text" name="takeaway2" rows="4" cols="62" placeholder="Click here to type takeaway two"></textarea>
+                </div>
+                <div class="takeaway-item">
+                    <p class="order"> 3. </p>
+                    <textarea class="takeaway-text" name="takeaway3" rows="4" cols="62" placeholder="Click here to type takeaway three"></textarea>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+   
+
+    
+
+</body>
