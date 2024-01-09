@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
 
         </div>
-                <div class="newEntry-item"> <a href="month.html"><button id="backEntry"> back </button></a> </div>    
+                    
               
            
         `;
